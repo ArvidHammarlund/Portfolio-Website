@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback, useRef } from "react";
 import logo from "./apple-touch-icon copy.png"
-import Nav from "../nav"
+import Nav from "./Nav"
 
 export default function Header({navOpen, setNavOpen}) {
   
@@ -28,14 +28,12 @@ export default function Header({navOpen, setNavOpen}) {
     };
   }, [handleNavigation]);
 
-    return (
-        <header ref={ref} className='header'>
-        <a href="/" className="header__logo">
-          <img src={logo}></img>
-          Arvid Hammarlund
-        </a>
-        
-        <Nav navOpen={navOpen} setNavOpen={setNavOpen} />
-      </header>
-    )
+  return (
+    <header ref={ref} className='header'>
+      <a href="/" className="header__logo">
+        <img src={logo}></img>Arvid Hammarlund
+      </a>
+      <Nav navOpen={navOpen} setNavOpen={setNavOpen} />
+    </header>
+  )
 }

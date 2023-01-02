@@ -1,11 +1,10 @@
 import './App.css';
-import '../styles/utilites.css';
-import Header from '../components/header';
-import Portfolio from '../components/portfolio';
-import About from "../components/about"
-import Hero from "../components/hero"
-import Contacs from "../components/contacts"
-import Popup from "../components/popup/"
+import Header from './Header';
+import Portfolio from './Portfolio';
+import About from "./About"
+import Hero from "./Hero"
+import Contacts from "./Contacts"
+import Popup from "./Popup"
 import {useState, useEffect, useRef} from "react";
 
 export default function App() {
@@ -32,7 +31,7 @@ export default function App() {
   return (
     <>
       <Header navOpen={navOpen} setNavOpen={setNavOpen} /> 
-      <Popup navOpen={navOpen} ref={ref2} />
+      <Popup navOpen={navOpen} ref2={ref2} />
       <div className='side_shadow__left'></div>
       <div className='side_shadow__right'></div>
       <main ref={ref}>
@@ -46,5 +45,7 @@ export default function App() {
       </footer>
     </>
   )
+
 }
+
 

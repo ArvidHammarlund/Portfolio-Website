@@ -1,10 +1,9 @@
 import Projects from "./project";
 
 export default function Portfolio() {
-    return (
-        <section id="portfolio" className="portfolio__area">
-        {/*--===== Projects =====--*/} 
-          <h2 className="portfolio__header">Projects</h2>
+  return (
+    <section id="portfolio" className="portfolio__area">
+      <h2 className="portfolio__header">Projects</h2>
           {/* 
           <div>
             <div className="portfolio__control">
@@ -16,7 +15,7 @@ export default function Portfolio() {
             </div>
           </div>
            */}
-          <Projects />
-        </section>
-    )
+      <Projects />
+    </section>
+  )
 }

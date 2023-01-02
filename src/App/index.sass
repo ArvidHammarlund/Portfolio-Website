@@ -1,0 +1,61 @@
+@import "utils"
+@import "Header"
+@import "Hero"
+@import "Popup"
+@import "About"
+@import "Contacts"
+@import "Portfolio"
+
+/// SELECTORS /////   
+
+html
+  scroll-behavior: smooth
+
+body
+  width: 100vw
+  height: 100vh
+  color: $lightest-slate
+  background-color: $darkest-navy
+  overflow-x: hidden
+
+main 
+  padding: 0 150px
+    
+.side_shadow__left
+  background-color: green
+  z-index: 200
+  position: fixed
+  height: 100vh
+  width:10px
+  top: 0px
+  left: -10px
+  box-shadow: 5px 0px 2vw black
+
+.side_shadow__right
+  z-index: 200
+  position: fixed
+  height: 100vh
+  width:10px
+  top: 0px
+  right: -10px
+  box-shadow: -5px 0px 2vw black
+    
+/// DYNAMICS /////
+
+@media screen and (max-width: 1080px) 
+  main
+    padding: 0px 100px
+
+@media screen and (max-width: 768px) 
+  main
+    padding: 0px 50px
+    
+@media screen and (max-width: 480px) 
+  main
+    padding: 0px 25px
+
+    
+
+    
+
+    

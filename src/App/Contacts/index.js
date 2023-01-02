@@ -1,6 +1,4 @@
-
 export default function Contacts() {
-
   return (
     <div>
       <h2>Contacts</h2>
@@ -10,5 +8,4 @@ export default function Contacts() {
         </div>
     </div>
   )
-
 }

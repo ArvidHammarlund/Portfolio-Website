@@ -1,0 +1,73 @@
+@import "../utils"
+
+.portfolio
+  &__area
+    display: flex
+    flex-direction: column  
+    align-items: center
+    min-height: 100vh
+    & > h2
+      color: $white
+  &__control
+    display: flex
+    width: 65vw
+    height: 70px
+    margin: 10px
+    & > button
+      width: 20%
+      background: transparent
+      color: $green
+      border: 1px solid
+      &:hover
+        color: $pink
+  &__display
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 20px
+    margin: 5vw        
+  &__item
+    text-decoration: none
+    color: $slate
+    & > div
+      box-shadow: 5px 5px 5px black,
+      position: relative
+      padding: 20px
+      background: $navy
+      height: 400px
+      width: 300px
+      transition: transform 0.3s
+      &:hover
+        transform: translateY(-10px)
+        & h5
+          color: $green
+      & > h3
+        padding-top: 20px
+        color: $white
+        margin-bottom: -15px
+      & > h4
+        position: absolute
+        bottom: 5px
+      & > i
+        position: absolute
+        top: 20px
+        right: 20px
+      & > p
+        margin-top: 20px
+
+
+/// DYNAMICS /////
+
+@media screen and (max-width: 1080px) 
+
+@media screen and (max-width: 768px) 
+    .portfolio__control
+        width: 90vw
+    .portfolio__display
+        grid-template-columns: 1fr
+        padding-bottom: 100px
+    
+@media screen and (max-width: 480px) 
+
+    
+
+

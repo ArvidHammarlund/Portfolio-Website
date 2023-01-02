@@ -1,4 +1,4 @@
-import DynamicText from '../dynamic_text';
+import DynamicText from './dynamic_text';
 
 export default function Hero() {
 

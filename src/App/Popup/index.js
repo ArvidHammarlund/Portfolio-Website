@@ -1,8 +1,6 @@
-
-export default function Popup({handleNav, ref}) {
-  
+export default function Popup({handleNav, ref2}) {
   return (
-    <div ref={ref} className='popup__area'>
+    <div ref={ref2} className='popup__area'>
       <nav>
         <button onClick={handleNav}>Exit</button>
         <button onClick={handleNav}><a href="/#portfolio">Portfolio</a></button>
@@ -11,5 +9,4 @@ export default function Popup({handleNav, ref}) {
       </nav>
     </div>
   ) 
-  
 }

@@ -1,12 +1,22 @@
-@import "utils"
-@import "Header"
-@import "Hero"
-@import "Popup"
-@import "About"
-@import "Contacts"
-@import "Portfolio"
+/// CONSTANTS ///
 
-/// SELECTORS /////   
+$darkest-navy: #020c1b
+$navy: #0a192f
+$white: #e6f1ff
+$green: #AD0CA5 
+$pink: #ff1694
+$slate: #8892b0
+$lightest-slate: #a8b2d1
+
+/// IMPORTS /// 
+
+@import "Home"
+@import "Layout"
+
+/// SELECTORS ///   
+
+* 
+  box-sizing: border-box
 
 html
   scroll-behavior: smooth
@@ -17,28 +27,29 @@ body
   color: $lightest-slate
   background-color: $darkest-navy
   overflow-x: hidden
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI' 
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 
 main 
-  padding: 0 150px
-    
-.side_shadow__left
-  background-color: green
-  z-index: 200
-  position: fixed
-  height: 100vh
-  width:10px
-  top: 0px
-  left: -10px
-  box-shadow: 5px 0px 2vw black
+  padding: 0px 150px
 
-.side_shadow__right
+.side_shadow
   z-index: 200
   position: fixed
   height: 100vh
   width:10px
   top: 0px
-  right: -10px
-  box-shadow: -5px 0px 2vw black
+
+  &__right
+    right: -10px
+    box-shadow: -5px 0px 2vw black
+
+  &__left
+    left: -10px
+    box-shadow: 5px 0px 2vw black
+
     
 /// DYNAMICS /////
 

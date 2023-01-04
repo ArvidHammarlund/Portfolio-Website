@@ -48,6 +48,10 @@
   color: #e6f1ff;
 }
 .hero__button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
   margin-top: 50px;
   color: #AD0CA5;
   border: 1px solid;
@@ -144,8 +148,11 @@
   flex-direction: column;
   align-items: center;
 }
-.contacts__area > div > h2 {
+.contacts__icons {
+  display: block;
   color: #e6f1ff;
+  margin: 50px;
+  font-size: 50px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -278,6 +285,26 @@
   text-decoration: none;
   font-weight: 400;
   color: #8892b0;
+}
+
+.project {
+  padding: 150px 0;
+  min-height: 100vh;
+}
+.project__title {
+  color: #e6f1ff;
+}
+.project__text {
+  max-inline-size: 66ch;
+}
+.project__video {
+  width: 100%;
+  height: auto;
+}
+.project__link {
+  color: #e6f1ff;
+  padding: auto;
+  font-size: 25px;
 }
 
 * {

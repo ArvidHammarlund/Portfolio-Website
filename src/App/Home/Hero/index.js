@@ -1,4 +1,5 @@
 import DynamicText from './dynamic_text';
+import cv from "./Cv.pdf"
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       <DynamicText />
       <p className="hero__text">And this is my <span>portfolio website</span></p>
       <div>
-        <button className="hero__button" href="">Check out my resume!</button>
+        <a className="hero__button" href={cv} download="arvidHammarlundCV.pdf">Check out my resume!</a>
       </div>
       </section>
   )

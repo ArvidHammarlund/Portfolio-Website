@@ -3,6 +3,7 @@ import Contacts from "./Contacts"
 import Popup from "./Popup"
 
 import {useState, useEffect, useRef} from "react";
+import { Outlet } from "react-router-dom";
 
 const Layout = () => {
 

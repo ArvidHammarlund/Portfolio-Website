@@ -10,9 +10,9 @@ const Header = ({navOpen, setNavOpen}) => {
   const handleNavigation = useCallback(
     e => {
       const window = e.currentTarget;
-      if (y > window.scrollY) {
+      if (y > window.scrollY || y < 0) {
         ref.current.style.transform = 'translateY(0)';
-      } else if (y < window.scrollY) {
+      } else if (y < window.scrollY + 50) {
         ref.current.style.transform = 'translateY(-100px)';
       }
       setY(window.scrollY);
